@@ -1,0 +1,19 @@
+.cardPicture {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    background-image: url("../Profile/back.jpg");
+    /* background-color: rgb(65, 58, 65); */
+  }
+  .title {
+    color: rgb(161, 158, 158);
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(15, 29, 2);
+  }
+  img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+  }

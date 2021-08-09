@@ -1,0 +1,26 @@
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008cba;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+  .ContainerOverlay:hover .overlay {
+    bottom: 0;
+    height: 70%;
+  }
+  @media (max-width: 761px) {
+   img  {
+    max-height: 10rem;
+      }
+    }
+    
+
+    @media (max-width: 761px) {
+      .voyagrimag  {
+       max-width: 300px;
+         }
+       }

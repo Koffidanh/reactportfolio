@@ -1,0 +1,9 @@
+/* Profile name */
+span {
+  background-color: rgb(245, 233, 0);
+  border: 2px solid black;
+  font-weight: bolder;
+}
+h1 {
+  font-weight: bolder;
+}

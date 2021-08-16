@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Scroll from "react-scroll";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -22,6 +24,8 @@ import upwork from "../Network/upwork.png"
 import download from "../Welcome/image/download.png"
 import linkedin from '../Welcome/image/linkedin.png'
 import github from '../Welcome/image/github.png'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import favicon from '../Welcome/image/favicon.png';
 
 import styled from "styled-components";
 
@@ -35,6 +39,25 @@ export default function Welcome() {
 
     const text = ["Koffi Danhounsrou", "Freelancer", "Full Stack Web Developer"]
 
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5,
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 5,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+        },
+    };
 
     function textChange() {
         for (let i = 0; i <= text.length; i++) {
@@ -59,7 +82,10 @@ export default function Welcome() {
     return (
         <Container >
 
-            {/* <img src={image}/> */}
+<Header>
+<img src={favicon} alt="favicon" />
+</Header>
+            
 
 
             <Span>
@@ -218,50 +244,65 @@ export default function Welcome() {
 
             <SkillContainer>
                 <Skills>
+                    <Carousel
+                        swipeable={false}
+                        draggable={false}
+                        showDots={false}
+                        responsive={responsive}
+                        infinite={true}
+                        transitionDuration={500}
+                       
+                        autoPlaySpeed={1000}
+                    >
+                        <WrapSkill>
+                            <img src={reactimag} alt="reacy" />
+                        </WrapSkill>
 
-                    <img src={reactimag} alt="reacy" />
+                        <WrapSkill>
+                            <img src={htmlimag} alt="html" />
+                        </WrapSkill>
 
+                        <WrapSkill>
+                        <img src={cssimag} alt="css" />
+                        </WrapSkill>
 
+                        <WrapSkill>
+                        <img src={jsimag} alt="js" />
+                        </WrapSkill>
 
-                    <img src={htmlimag} alt="html" />
+                        <WrapSkill>
+                        <img src={nodeimag} alt="node" />
+                        </WrapSkill>
 
-
-
-                    <img src={cssimag} alt="css" />
-
-
-                    <img src={jsimag} alt="js" />
-
-
-                    <img src={nodeimag} alt="node" />
-
-
+                    </Carousel>
 
 
 
                 </Skills>
             </SkillContainer>
-<ContactTitle>
-<h1> Contact Me</h1>
-</ContactTitle>
+            <ContactTitle>
+                <h1> Contact Me</h1>
+            </ContactTitle>
 
-            
+
             <ContactContainer>
-                
+
 
                 <Contact>
-                    <a className="navbar-brand" href="https://www.linkedin.com/in/boris-koffi-danhounsrou-59556955" target="_blank" rel="noopener noreferrer"><img src={linkedin}  alt="Upwork" /> </a>
+                    <a className="navbar-brand" href="https://www.linkedin.com/in/boris-koffi-danhounsrou-59556955" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="Upwork" /> </a>
                 </Contact>
 
                 <Contact>
-                    <a className="navbar-brand" href="https://github.com/Koffidanh" target="_blank" rel="noopener noreferrer"><img src={github}  alt="github" /> </a>
+                    <a className="navbar-brand" href="https://github.com/Koffidanh" target="_blank" rel="noopener noreferrer"><img src={github} alt="github" /> </a>
                 </Contact>
 
                 <Contact>
-                    <a className="navbar-brand" href="https://docs.google.com/document/d/1FlrnGU9Q_zsd8MRHkEKsnp7o1aW422_ME6vCmK0OKj0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" ><img src={download}  alt="download" /> </a>
+                    <a className="navbar-brand" href="https://docs.google.com/document/d/1FlrnGU9Q_zsd8MRHkEKsnp7o1aW422_ME6vCmK0OKj0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" ><img src={download} style={{width:"50px"}} alt="download" /> </a>
                 </Contact>
 
-
+                <Contact>
+                <a className="navbar-brand" href="mailto: koffi.danh@gmail.com" target="_blank" rel="noopener noreferrer" >  <FontAwesomeIcon icon={faPaperPlane} size="2x"   alt="email"/> </a>
+                </Contact>
             </ContactContainer>
 
 
@@ -274,9 +315,11 @@ const Container = styled.div`
 min-height: calc(100vh );
 padding: 0 calc(3.5vw + 5px);
 content-align:fit;
-background-color: blue;
+background-color: rgb(52,51,50);
 position: absolute;
 padding-bottom: 100px;
+position: relative;
+overflow-x: hidden;
 
 `
 
@@ -354,19 +397,23 @@ p {
 `
 
 const Skills = styled.div`
-margin-top: 30px;
+margin-top: 80px;
 display: grid;
 padding: 30px 0px 26px;
 grid-gap: 25px;
-grid-template-columns: repeat(5, minmax(0, 1fr));
+grid-template-columns: repeat(4, minmax(0, 1fr));
 border-radius: 10px;
 cursor: pointer;
 border: 3px solid rgba(249, 249, 249, 0.1);
 box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+width: 400vw;
+    height: 30vh;
+    overflow: visible;
+
 img {
-    width: 55%;
-    height: 55%;
+    width: 30%;
+    height: 100%;
     object-fit: contain;
    
 
@@ -379,19 +426,25 @@ padding-right: 0;
 padding-left: 0:
 top: 100px;
 min-height: calc(1vh );
-// background-color: white;
-width:calc(100vw );
+background-color: grey;
+width: 100vw;
 padding-bottom: 30px;
 margin-top: 40px;
-
+overflow: visible;
 `
 
 const ContactContainer = styled(SkillContainer)`
 margin-top: 30px;
 display: grid;
-padding: 30px 0px 26px;
 grid-gap: 25px;
-grid-template-columns: repeat(3, minmax(0, 1fr));
+grid-template-columns: repeat(4, minmax(0, 1fr));
+display: flex;
+padding-left: auto;
+padding-right: auto;
+width: 30vw;
+height: 30vh;
+
+
 
 
 `
@@ -405,12 +458,13 @@ box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 padding-bottom: 30px;
-margin-top: 40px;
-align-content: center;
 display: flex;
+// padding-left: auto;
+// padding-right: auto;
+content-align: center;
 img {
     
-    width: 20%;
+    width: 75%;
     height: 100%;
     object-fit: contain;
    
@@ -428,6 +482,31 @@ img {
 const ContactTitle = styled.div`
 h1 {
     text-align: center;
+
+}
+
+`
+const WrapSkill = styled(Wrap)`
+padding-top: 30px;
+padding-right: 10px;
+height: 50vh;
+`
+
+const Header = styled(Container)`
+min-height: 1vh;
+min-width: 100%;
+background-color: blue;
+display: grid;
+padding: 30px 0px 26px;
+grid-gap: 25px;
+padding-right: 0:
+grid-template-columns: repeat(2, minmax(0, 1fr));
+img {
+    
+    width: 75px;
+    height: 100%;
+    object-fit: contain;
+   
 
 }
 

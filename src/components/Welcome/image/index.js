@@ -92,7 +92,7 @@ function Network() {
   <ul className="navbar-nav">
     <li className="nav-item">
 
-      <a className="navbar-brand" href="mailto: koffi.danh@gmail.com" target="_blank" rel="noopener noreferrer" >  <FontAwesomeIcon icon={faBook} size="5x"  alt="email"/> </a>
+      <a className="navbar-brand" href="mailto: koffi.danh@gmail.com" target="_blank" rel="noopener noreferrer" >  <FontAwesomeIcon icon={faBook} size={{5x}}  alt="email"/> </a>
 
     </li>
 

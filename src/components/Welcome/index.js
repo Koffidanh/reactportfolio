@@ -14,6 +14,7 @@ import codequizimag from "../Welcome/image/codingquiz1.png";
 import passwordgeneratorimag from "../Welcome/image/generatepassword.png";
 import burgerloggerimag from "../Welcome/image/burger.png";
 import jobaidimag from "../Welcome/image/jobaid.png";
+import notetakerimag from "../Welcome/image/notetaker.png";
 import reactimag from "../Welcome/Skills/react.png";
 import htmlimag from "../Welcome/Skills/html5.png";
 import cssimag from "../Welcome/Skills/CSS3.png";
@@ -83,8 +84,8 @@ export default function Welcome() {
         <Container >
 
 <Header>
-<img src={favicon} alt="favicon" />
-</Header>
+<VFX.VFXImg src={favicon} alt="favicon" shader="rgbShift" />
+ </Header>
             
 
 
@@ -106,10 +107,10 @@ export default function Welcome() {
                     <img src={voyagrimag} alt="voyagr" />
                     <p>This 'Voyagr' was created for user to record their travel.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a a href="https://voyagr.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a href="https://github.com/Kayvonk/voyagr" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
                 </Wrap>
 
@@ -121,10 +122,10 @@ export default function Welcome() {
                     <p>Restaurant Roulette was create for user to decide what
                         restaurant to eat out.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a href="https://johnsonr84.github.io/restaurant-roulette/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a href="https://github.com/johnsonr84/restaurant-roulette" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
                 </Wrap>
 
@@ -135,10 +136,10 @@ export default function Welcome() {
                     <p>Work Planner was created to help the user plan his/her daily work
                         schedule.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a href="https://koffidanh.github.io/workplanner/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a href="https://github.com/Koffidanh/workplanner" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
                 </Wrap>
 
@@ -155,10 +156,10 @@ export default function Welcome() {
                     <p>This Weather Tracker was created to help the user plan his/her trip
                         around world.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a href="https://koffidanh.github.io/weather-tracker/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a href="https://github.com/Koffidanh/weather-tracker" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
                 </Wrap>
 
@@ -169,22 +170,23 @@ export default function Welcome() {
                     <img src={codequizimag} alt="code quiz " />
                     <p>This Coding Quiz was created to test the user Knowledge on Web Development content.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a href="https://koffidanh.github.io/coding-quiz/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a href="https://github.com/Koffidanh/coding-quiz" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
                 </Wrap>
 
 
                 <Wrap>
-                    <img src={voyagrimag} alt="voyagr" />
-                    <p>dgdfsgdfgdsf</p>
+                <h1>Note Taker</h1>
+                    <img src={notetakerimag} alt="note taker" />
+                    <p>This 'Note Taker' was created to generate to help the user to organize his /her daily life or work.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a  href=" https://limitless-hamlet-20887.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a href="https://github.com/Koffidanh/note-taker" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
 
 
@@ -201,10 +203,10 @@ export default function Welcome() {
                     <img src={passwordgeneratorimag} alt="password generator" />
                     <p>This Password Generator was created to generate a high security password.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a href="https://koffidanh.github.io/password-generator/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a href="https://github.com/Koffidanh/password-generator" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
                 </Wrap>
 
@@ -215,10 +217,10 @@ export default function Welcome() {
                     <img src={burgerloggerimag} alt="burger logger " />
                     <p>This 'Burger Logger ' was created to log in your favorite burger that you wish to eat.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a href="https://rhubarb-surprise-45818.herokuapp.com/" target="_blank" rel="noopener noreferrer" >Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a href="https://github.com/Koffidanh/burger" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
                 </Wrap>
 
@@ -228,10 +230,10 @@ export default function Welcome() {
                     <img src={jobaidimag} alt="jobaid" />
                     <p>JOBAID was created to increase revenue for small to medium sized businesses.</p>
                     <Button>
-                        <p>Demo</p>
+                        <a href=" https://whispering-eyrie-33529.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
-                        <p>View Code</p>
+                        <a  href="https://github.com/Koffidanh/job-aid" target="_blank" rel="noopener noreferrer">View Code</a>
                     </Button>
 
 
@@ -281,7 +283,7 @@ export default function Welcome() {
                 </Skills>
             </SkillContainer>
             <ContactTitle>
-                <h1> Contact Me</h1>
+                <h2> Contact Me</h2>
             </ContactTitle>
 
 
@@ -297,7 +299,7 @@ export default function Welcome() {
                 </Contact>
 
                 <Contact>
-                    <a className="navbar-brand" href="https://docs.google.com/document/d/1FlrnGU9Q_zsd8MRHkEKsnp7o1aW422_ME6vCmK0OKj0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" ><img src={download} style={{width:"50px"}} alt="download" /> </a>
+                    <a className="navbar-brand" href="https://docs.google.com/document/d/1LqsMnv28NT_4O33mllLMQuPTg7sjhfu-JVKnQi9Ndo0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" ><img src={download} style={{width:"50px"}} alt="download" /> </a>
                 </Contact>
 
                 <Contact>
@@ -311,11 +313,19 @@ export default function Welcome() {
 }
 
 const Container = styled.div`
+h1 {
+    color: black;
+}
+h2 {
+    color: black;
+    background-color: #F5E900;
+    height: 50px;
 
+}
 min-height: calc(100vh );
 padding: 0 calc(3.5vw + 5px);
 content-align:fit;
-background-color: rgb(52,51,50);
+background-color: #99ffcc;
 position: absolute;
 padding-bottom: 100px;
 position: relative;
@@ -325,17 +335,21 @@ overflow-x: hidden;
 
 
 const Span = styled.div`
+position: relative;
 width: 100%;
 height: calc(100vh - 10vh );
-display:flex;
-content-align: center;
+
 bold: border;
 font-size: 30px;
-top: auto;
-bottom: auto;
-display:flex;
+top: 300px;
+
+
+text-align: center;
+
 `
 const ProjectTitle = styled.div`
+
+text-align: center;
 
 `
 
@@ -350,7 +364,7 @@ box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 padding-bottom: 30px;
-margin-top: 40px;
+margin-top: 70px;
 h1 {
     top: 10px;
     font-size: 30px;
@@ -374,7 +388,8 @@ img {
 
 p {
     font-size: 20px;
-    color: white;
+    color:black;
+    font-weight: bold;
 }
 `
 const Projects1 = styled.div`
@@ -383,6 +398,7 @@ display: grid;
 padding: 30px 0px 26px;
 grid-gap: 25px;
 grid-template-columns: repeat(3, minmax(0, 1fr));
+
 `
 const Button = styled.button`
 background: rgba(0, 0, 0, 0.3);
@@ -407,6 +423,7 @@ cursor: pointer;
 border: 3px solid rgba(249, 249, 249, 0.1);
 box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+
 width: 400vw;
     height: 30vh;
     overflow: visible;
@@ -415,6 +432,7 @@ img {
     width: 30%;
     height: 100%;
     object-fit: contain;
+    filter: invert(100%)
    
 
 }
@@ -424,25 +442,29 @@ const SkillContainer = styled.div`
 position: relative;
 padding-right: 0;
 padding-left: 0:
-top: 100px;
+// top: 100px;
 min-height: calc(1vh );
-background-color: grey;
+//background-color: #0984E3 ;
 width: 100vw;
 padding-bottom: 30px;
-margin-top: 40px;
+margin-top: 100px;
 overflow: visible;
 `
 
 const ContactContainer = styled(SkillContainer)`
 margin-top: 30px;
 display: grid;
-grid-gap: 25px;
+grid-gap: 300px;
 grid-template-columns: repeat(4, minmax(0, 1fr));
 display: flex;
-padding-left: auto;
-padding-right: auto;
-width: 30vw;
+// padding-left: auto;
+// padding-right: auto;
+width: 100%;
 height: 30vh;
+margin-top: 10px;
+flex-wrap: wrap;
+align-content: center;
+background-color: #EEEEEE;
 
 
 
@@ -450,21 +472,23 @@ height: 30vh;
 `
 
 const Contact = styled(Skills)`
-height: auto;
+height: 100px;
+width: 100px;
 border-radius: 10px;
 cursor: pointer;
 border: 3px solid rgba(249, 249, 249, 0.1);
 box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-padding-bottom: 30px;
+padding-bottom: 10px;
+
 display: flex;
 // padding-left: auto;
 // padding-right: auto;
 content-align: center;
 img {
     
-    width: 75%;
+    width: 100%;
     height: 100%;
     object-fit: contain;
    
@@ -480,7 +504,7 @@ img {
 `
 
 const ContactTitle = styled.div`
-h1 {
+h2 {
     text-align: center;
 
 }

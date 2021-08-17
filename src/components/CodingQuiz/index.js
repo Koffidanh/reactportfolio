@@ -36,8 +36,8 @@ export default function CodingQuiz() {
                     </p>
                     <p>Tools used were Bootstrap, JavaScript, CSS.</p>
                     <p>Here is the link to the Repo and Deploy. </p>
-                    <li><a href="https://github.com/Koffidanh/coding-quiz" target="_blank" > Repo </a></li>
-                    <li><a href="https://koffidanh.github.io/coding-quiz/" target="_blank" >Deploy</a></li>
+                    <li><a href="https://github.com/Koffidanh/coding-quiz" target="_blank" rel="noopener noreferrer"> Repo </a></li>
+                    <li><a href="https://koffidanh.github.io/coding-quiz/" target="_blank" rel="noopener noreferrer">Deploy</a></li>
 
                 </Col>
 

@@ -90,8 +90,14 @@ export default function Welcome() {
 
 
             <Span>
-                Hello, I am Koffi Danhounsrou, I am Web Developer
+                HELLO, I AM KOFFI DANHOUNSROU.
+                <br/>
+                FREELANCER FULL STACK WEB DEVELOPER.
+                <br/>
+                MERN STACK, JAVASCRIPT, JQUERY, REACT, HTML, CSS. 
             </Span>
+            
+            
 
 
 
@@ -107,7 +113,7 @@ export default function Welcome() {
                     <img src={voyagrimag} alt="voyagr" />
                     <p>This 'Voyagr' was created for user to record their travel.</p>
                     <Button>
-                        <a a href="https://voyagr.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a  href="https://voyagr.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
                     </Button>
                     <Button>
                         <a href="https://github.com/Kayvonk/voyagr" target="_blank" rel="noopener noreferrer">View Code</a>
@@ -325,7 +331,7 @@ h2 {
 min-height: calc(100vh );
 padding: 0 calc(3.5vw + 5px);
 content-align:fit;
-background-color: #99ffcc;
+background-color: #rgb(255,255,255);
 position: absolute;
 padding-bottom: 100px;
 position: relative;
@@ -339,7 +345,7 @@ position: relative;
 width: 100%;
 height: calc(100vh - 10vh );
 
-bold: border;
+font-family: border;
 font-size: 30px;
 top: 300px;
 
@@ -379,6 +385,11 @@ img {
 
 }
 
+a {
+    font-size: 15px;
+    font-family: bolder;
+}
+
 &:hover {
     box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
     rgb(0 0 0 / 72%) 0px 30px 22px -10px;
@@ -401,7 +412,8 @@ grid-template-columns: repeat(3, minmax(0, 1fr));
 
 `
 const Button = styled.button`
-background: rgba(0, 0, 0, 0.3);
+//background: rgba(0, 0, 0, 0.3);
+background-color: #e6e6ff;
 border: 1px solid rgb(249, 249, 249);
 color: rgb(249, 249, 249);
 text-transform: uppercase;
@@ -419,10 +431,10 @@ padding: 30px 0px 26px;
 grid-gap: 25px;
 grid-template-columns: repeat(4, minmax(0, 1fr));
 border-radius: 10px;
-cursor: pointer;
-border: 3px solid rgba(249, 249, 249, 0.1);
-box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+// cursor: pointer;
+// border: 3px solid rgba(249, 249, 249, 0.1);
+// box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+// rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 
 width: 400vw;
     height: 30vh;
@@ -432,7 +444,7 @@ img {
     width: 30%;
     height: 100%;
     object-fit: contain;
-    filter: invert(100%)
+    //filter: invert(100%)
    
 
 }
@@ -444,7 +456,7 @@ padding-right: 0;
 padding-left: 0:
 // top: 100px;
 min-height: calc(1vh );
-//background-color: #0984E3 ;
+//background-color: #f2ffcc ;
 width: 100vw;
 padding-bottom: 30px;
 margin-top: 100px;
@@ -452,7 +464,7 @@ overflow: visible;
 `
 
 const ContactContainer = styled(SkillContainer)`
-margin-top: 30px;
+// margin-top: 15px;
 display: grid;
 grid-gap: 300px;
 grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -461,10 +473,8 @@ display: flex;
 // padding-right: auto;
 width: 100%;
 height: 30vh;
-margin-top: 10px;
-flex-wrap: wrap;
 align-content: center;
-background-color: #EEEEEE;
+//background-color: #009900;
 
 
 
@@ -480,8 +490,8 @@ border: 3px solid rgba(249, 249, 249, 0.1);
 box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-padding-bottom: 10px;
-
+padding-bottom: 1px;
+background-color: #e6e6ff;
 display: flex;
 // padding-left: auto;
 // padding-right: auto;
@@ -491,6 +501,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: sepia(100%)
    
 
 }

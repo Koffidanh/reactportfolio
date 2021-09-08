@@ -2,25 +2,25 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { VFXProvider } from 'react-vfx';
 import "../src/components/Contact/Function"
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
  import Welcome from "./components/Welcome";
 import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
-import RestaurantRoulette from "./components/RestaurantRoulette";
-import WorkPlanner from "./components/WorkPlanner";
-import WeatherTracker from "./components/WeatherTracker";
-import CodingQuiz from "./components/CodingQuiz";
-import PasswordGenerator from "./components/PasswordGenerator";
-import BurgerLogger from "./components/BurgerLogger";
-import JobAid from "./components/JobAid";
-import NoteTaker from "./components/NoteTaker";
-import Experiences from "./components/Experiences";
-import Skills from "./components/Skills";
-import Educations from "./components/Educations";
-import Contact from "./components/Contact";
-import Voyagr from "./components/Voyagr";
+// import RestaurantRoulette from "./components/RestaurantRoulette";
+// import WorkPlanner from "./components/WorkPlanner";
+// import WeatherTracker from "./components/WeatherTracker";
+// import CodingQuiz from "./components/CodingQuiz";
+// import PasswordGenerator from "./components/PasswordGenerator";
+// import BurgerLogger from "./components/BurgerLogger";
+// import JobAid from "./components/JobAid";
+// import NoteTaker from "./components/NoteTaker";
+// import Experiences from "./components/Experiences";
+// import Skills from "./components/Skills";
+// import Educations from "./components/Educations";
+// import Contact from "./components/Contact";
+// import Voyagr from "./components/Voyagr";
 function App() {
   return (
     <Router>

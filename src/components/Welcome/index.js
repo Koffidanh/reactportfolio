@@ -320,7 +320,7 @@ export default function Welcome() {
 
 const Container = styled.div`
 h1 {
-    color: black;
+    color: #bbbfc7;
 }
 h2 {
     color: black;
@@ -331,7 +331,7 @@ h2 {
 min-height: calc(100vh );
 padding: 0 calc(3.5vw + 5px);
 content-align:fit;
-background-color: #rgb(255,255,255);
+background-color: rgb(26, 48, 87);
 position: absolute;
 padding-bottom: 100px;
 position: relative;
@@ -348,7 +348,7 @@ height: calc(100vh - 10vh );
 font-family: border;
 font-size: 30px;
 top: 300px;
-
+color: #bbbfc7;
 
 text-align: center;
 
@@ -386,7 +386,7 @@ img {
 }
 
 a {
-    font-size: 15px;
+    font-size: 20px;
     font-family: bolder;
 }
 
@@ -399,7 +399,7 @@ a {
 
 p {
     font-size: 20px;
-    color:black;
+    color: #bbbfc7;
     font-weight: bold;
 }
 `
@@ -442,7 +442,7 @@ width: 400vw;
 
 img {
     width: 30%;
-    height: 100%;
+    height: 75%;
     object-fit: contain;
     //filter: invert(100%)
    
@@ -491,7 +491,7 @@ box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 padding-bottom: 1px;
-background-color: #e6e6ff;
+background-color: #6783b5;
 display: flex;
 // padding-left: auto;
 // padding-right: auto;
@@ -530,7 +530,7 @@ height: 50vh;
 const Header = styled(Container)`
 min-height: 1vh;
 min-width: 100%;
-background-color: blue;
+background-color: #7a8599;
 display: grid;
 padding: 30px 0px 26px;
 grid-gap: 25px;

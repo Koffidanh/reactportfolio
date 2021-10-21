@@ -16,7 +16,7 @@ function App() {
       <div>
       {/* <Navbar /> */}
         <Wrapper>
-        <Route exact path="/Welcome" component={Welcome} />
+        <Route path="/" component={Welcome} />
                 </Wrapper>
         
         {/* <Footer /> */}

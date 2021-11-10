@@ -37,6 +37,7 @@ AOS.init();
 export default function Welcome() {
     const [paramText, setParamText] = useState("")
     const [randomText, setRandomText] = useState("")
+    // const [textCount, setTextCount] = useState("")
 
     const text = ["Koffi Danhounsrou", "Freelancer", "Full Stack Web Developer"]
 
@@ -62,23 +63,29 @@ export default function Welcome() {
 
     function textChange() {
         for (let i = 0; i <= text.length; i++) {
-            const randomText = text[i]
+             
+            setRandomText(text[i])
+            // setTimeout(
+                
+            //     setRandomText(text[i])
+        
+            //     , 1000)
 
+                console.log(text[i])
 
         }
+        console.log(randomText)
+        
     }
 
-    setTimeout(
-        textChange()
-
-
-        , 5000)
+    
 
 
     useEffect(() => {
-
-    }, [])
-
+        textChange();
+        console.log(randomText)
+    }, [randomText])
+    console.log(randomText)
 
     return (
         <Container >
@@ -90,7 +97,7 @@ export default function Welcome() {
 
 
             <Span>
-                HELLO, I AM KOFFI DANHOUNSROU.
+                HELLO, I AM KOFFI DANHOUNSROU. {[randomText]}
                 <br/>
                 FREELANCER FULL STACK WEB DEVELOPER.
                 <br/>
@@ -410,6 +417,20 @@ padding: 30px 0px 26px;
 grid-gap: 25px;
 grid-template-columns: repeat(3, minmax(0, 1fr));
 
+@media (max-width: 411px) {
+    grid-gap: 0px;
+grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  @media (min-width: 414px) {
+    grid-gap: 0px;
+grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (min-width: 412px) {
+    grid-gap: 0px;
+grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
 `
 const Button = styled.button`
 //background: rgba(0, 0, 0, 0.3);
@@ -476,8 +497,14 @@ height: 30vh;
 align-content: center;
 //background-color: #009900;
 
-
-
+@media (max-width: 411px) {
+    grid-gap: 25px;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 414px) {
+    grid-gap: 25px;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
 `
 

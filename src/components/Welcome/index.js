@@ -29,6 +29,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import favicon from '../Welcome/image/favicon.png';
 
 import styled from "styled-components";
+import TextAnimation from "./TextAnimation";
 
 // ..
 AOS.init();
@@ -100,6 +101,7 @@ export default function Welcome() {
                 HELLO, I AM KOFFI DANHOUNSROU. {[randomText]}
                 <br/>
                 FREELANCER FULL STACK WEB DEVELOPER.
+                <TextAnimation/>
                 <br/>
                 MERN STACK, JAVASCRIPT, JQUERY, REACT, HTML, CSS. 
             </Span>

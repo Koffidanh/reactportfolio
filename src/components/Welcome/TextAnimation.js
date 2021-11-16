@@ -8,7 +8,8 @@ const wordArray = "Apple".split("");
 const [items , setItems] = useState(reactArray);
 const [count, setCount] = useState(0);
 const [play, setPlay] = useState(false);
-console.log(reactArray)
+console.log(reactArray);
+
     return (
         <Wrapper>
             

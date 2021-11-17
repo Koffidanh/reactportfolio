@@ -13,10 +13,10 @@ console.log(reactArray);
     return (
         <Wrapper>
             
-           {reactArray.map((item, index)=> (
+           {/* {reactArray.map((item, index)=> (
 <span key={index}>{item}</span>
 
-           ))}
+           ))} */}
         </Wrapper>
     )
 }

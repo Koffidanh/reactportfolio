@@ -419,19 +419,23 @@ padding: 30px 0px 26px;
 grid-gap: 25px;
 grid-template-columns: repeat(3, minmax(0, 1fr));
 
-@media (max-width: 411px) {
-    grid-gap: 0px;
-grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  @media (min-width: 414px) {
-    grid-gap: 0px;
-grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
 
-  @media (min-width: 412px) {
+
+
+
+@media (max-width: 700px) {
     grid-gap: 0px;
 grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+//   @media (min-width: 414px) {
+//     grid-gap: 0px;
+// grid-template-columns: repeat(1, minmax(0, 1fr));
+//   }
+
+//   @media (min-width: 412px) {
+//     grid-gap: 0px;
+// grid-template-columns: repeat(1, minmax(0, 1fr));
+//   }
 
 `
 const Button = styled.button`

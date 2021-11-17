@@ -503,6 +503,15 @@ height: 30vh;
 align-content: center;
 //background-color: #009900;
 
+
+@media (max-width: 1500px) {
+    grid-gap: 200px;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 900px) {
+    grid-gap: 200px;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 @media (max-width: 411px) {
     grid-gap: 25px;
 grid-template-columns: repeat(2, minmax(0, 1fr));

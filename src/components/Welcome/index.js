@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Scroll from "react-scroll";
+import Fade from 'react-reveal/Fade'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { VFXSpan } from 'react-vfx';
@@ -64,22 +65,22 @@ export default function Welcome() {
 
     function textChange() {
         for (let i = 0; i <= text.length; i++) {
-             
+
             setRandomText(text[i])
             // setTimeout(
-                
+
             //     setRandomText(text[i])
-        
+
             //     , 1000)
 
-                console.log(text[i])
+            console.log(text[i])
 
         }
         console.log(randomText)
-        
+
     }
 
-    
+
 
 
     useEffect(() => {
@@ -91,236 +92,253 @@ export default function Welcome() {
     return (
         <Container >
 
-<Header>
-<VFX.VFXImg src={favicon} alt="favicon" shader="rgbShift" />
- </Header>
-            
-
-
-            <Span>
-                HELLO, I AM KOFFI DANHOUNSROU. {[randomText]}
-                <br/>
-                FREELANCER FULL STACK WEB DEVELOPER.
-                <TextAnimation/>
-                <br/>
-                MERN STACK, JAVASCRIPT, JQUERY, REACT, HTML, CSS. 
-            </Span>
-            
-            
+            <Fade right>
+                <Header>
+                    <VFX.VFXImg src={favicon} style={{width:"500"}} alt="favicon" shader="rgbShift"/>
+                </Header>
+            </Fade>
 
 
 
-
-            <ProjectTitle>
-                <h2>Recent Projects</h2>
-            </ProjectTitle>
-
-            <Projects1>
-
-                <Wrap>
-                    <h1>Voyagr</h1>
-                    <img src={voyagrimag} alt="voyagr" />
-                    <p>This 'Voyagr' was created for user to record their travel.</p>
-                    <Button>
-                        <a  href="https://voyagr.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </Button>
-                    <Button>
-                        <a href="https://github.com/Kayvonk/voyagr" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
-                </Wrap>
-
-
-
-                <Wrap>
-                    <h1>Restaurant Roulette</h1>
-                    <img src={restaurantimag} alt="restaurantRoulette " />
-                    <p>Restaurant Roulette was create for user to decide what
-                        restaurant to eat out.</p>
-                    <Button>
-                        <a href="https://johnsonr84.github.io/restaurant-roulette/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </Button>
-                    <Button>
-                        <a href="https://github.com/johnsonr84/restaurant-roulette" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
-                </Wrap>
-
-
-                <Wrap>
-                    <h1>Work Planner</h1>
-                    <img src={workplannerimag} alt="Work planner" />
-                    <p>Work Planner was created to help the user plan his/her daily work
-                        schedule.</p>
-                    <Button>
-                        <a href="https://koffidanh.github.io/workplanner/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </Button>
-                    <Button>
-                        <a href="https://github.com/Koffidanh/workplanner" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
-                </Wrap>
+            <Fade left>
+                <Span>
+                    HELLO, I AM KOFFI DANHOUNSROU. {[randomText]}
+                    <br />
+                    FREELANCE FULL STACK WEB DEVELOPER.
+                    <TextAnimation />
+                    <br />
+                    MERN STACK, JAVASCRIPT, JQUERY, REACT, HTML, CSS.
+                </Span>
+            </Fade>
 
 
 
 
-            </Projects1>
-
-            <Projects1>
-
-                <Wrap>
-                    <h1>Weather Tracker</h1>
-                    <img src={weathertrackerimag} alt="weather tracker" />
-                    <p>This Weather Tracker was created to help the user plan his/her trip
-                        around world.</p>
-                    <Button>
-                        <a href="https://koffidanh.github.io/weather-tracker/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </Button>
-                    <Button>
-                        <a href="https://github.com/Koffidanh/weather-tracker" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
-                </Wrap>
 
 
+            <Fade bottom>
+                <ProjectTitle>
+                    <h2>Recent Projects</h2>
+                </ProjectTitle>
+            </Fade>
 
-                <Wrap>
-                    <h1>Coding Quiz</h1>
-                    <img src={codequizimag} alt="code quiz " />
-                    <p>This Coding Quiz was created to test the user Knowledge on Web Development content.</p>
-                    <Button>
-                        <a href="https://koffidanh.github.io/coding-quiz/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </Button>
-                    <Button>
-                        <a href="https://github.com/Koffidanh/coding-quiz" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
-                </Wrap>
+            <Fade right>
+                <Projects1>
 
-
-                <Wrap>
-                <h1>Note Taker</h1>
-                    <img src={notetakerimag} alt="note taker" />
-                    <p>This 'Note Taker' was created to generate to help the user to organize his /her daily life or work.</p>
-                    <Button>
-                        <a  href=" https://limitless-hamlet-20887.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </Button>
-                    <Button>
-                        <a href="https://github.com/Koffidanh/note-taker" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
-
-
-                </Wrap>
-
-
-            </Projects1>
-
-
-            <Projects1>
-
-                <Wrap>
-                    <h1>Password Generator</h1>
-                    <img src={passwordgeneratorimag} alt="password generator" />
-                    <p>This Password Generator was created to generate a high security password.</p>
-                    <Button>
-                        <a href="https://koffidanh.github.io/password-generator/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </Button>
-                    <Button>
-                        <a href="https://github.com/Koffidanh/password-generator" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
-                </Wrap>
+                    <Wrap>
+                        <h1>Voyagr</h1>
+                        <img src={voyagrimag} alt="voyagr" />
+                        <p>This 'Voyagr' was created for user to record their travel.</p>
+                        <Button>
+                            <a href="https://voyagr.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/Kayvonk/voyagr" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
+                    </Wrap>
+                    <Wrap >
+                        <h1>Restaurant Roulette</h1>
+                        <img src={restaurantimag} alt="restaurantRoulette " />
+                        <p>Restaurant Roulette was create for user to decide what
+                            restaurant to eat out.</p>
+                        <Button>
+                            <a href="https://johnsonr84.github.io/restaurant-roulette/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/johnsonr84/restaurant-roulette" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
+                    </Wrap>
 
 
 
-                <Wrap>
-                    <h1>Burger Logger</h1>
-                    <img src={burgerloggerimag} alt="burger logger " />
-                    <p>This 'Burger Logger ' was created to log in your favorite burger that you wish to eat.</p>
-                    <Button>
-                        <a href="https://rhubarb-surprise-45818.herokuapp.com/" target="_blank" rel="noopener noreferrer" >Demo</a>
-                    </Button>
-                    <Button>
-                        <a href="https://github.com/Koffidanh/burger" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
-                </Wrap>
+                    <Wrap>
+                        <h1>Work Planner</h1>
+                        <img src={workplannerimag} alt="Work planner" />
+                        <p>Work Planner was created to help the user plan his/her daily work
+                            schedule.</p>
+                        <Button>
+                            <a href="https://koffidanh.github.io/workplanner/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/Koffidanh/workplanner" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
+                    </Wrap>
 
 
-                <Wrap>
-                    <h1>JobAid</h1>
-                    <img src={jobaidimag} alt="jobaid" />
-                    <p>JOBAID was created to increase revenue for small to medium sized businesses.</p>
-                    <Button>
-                        <a href=" https://whispering-eyrie-33529.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </Button>
-                    <Button>
-                        <a  href="https://github.com/Koffidanh/job-aid" target="_blank" rel="noopener noreferrer">View Code</a>
-                    </Button>
+                </Projects1>
+            </Fade>
 
+            <Fade left>
+                <Projects1>
 
-                </Wrap>
-
-
-            </Projects1>
-
-
-
-            <SkillContainer>
-                <Skills>
-                    <Carousel
-                        swipeable={false}
-                        draggable={false}
-                        showDots={false}
-                        responsive={responsive}
-                        infinite={true}
-                        transitionDuration={500}
-                       
-                        autoPlaySpeed={1000}
-                    >
-                        <WrapSkill>
-                            <img src={reactimag} alt="reacy" />
-                        </WrapSkill>
-
-                        <WrapSkill>
-                            <img src={htmlimag} alt="html" />
-                        </WrapSkill>
-
-                        <WrapSkill>
-                        <img src={cssimag} alt="css" />
-                        </WrapSkill>
-
-                        <WrapSkill>
-                        <img src={jsimag} alt="js" />
-                        </WrapSkill>
-
-                        <WrapSkill>
-                        <img src={nodeimag} alt="node" />
-                        </WrapSkill>
-
-                    </Carousel>
+                    <Wrap>
+                        <h1>Weather Tracker</h1>
+                        <img src={weathertrackerimag} alt="weather tracker" />
+                        <p>This Weather Tracker was created to help the user plan his/her trip
+                            around world.</p>
+                        <Button>
+                            <a href="https://koffidanh.github.io/weather-tracker/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/Koffidanh/weather-tracker" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
+                    </Wrap>
 
 
 
-                </Skills>
-            </SkillContainer>
-            <ContactTitle>
-                <h2> Contact Me</h2>
-            </ContactTitle>
+                    <Wrap>
+                        <h1>Coding Quiz</h1>
+                        <img src={codequizimag} alt="code quiz " />
+                        <p>This Coding Quiz was created to test the user Knowledge on Web Development content.</p>
+                        <Button>
+                            <a href="https://koffidanh.github.io/coding-quiz/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/Koffidanh/coding-quiz" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
+                    </Wrap>
 
 
-            <ContactContainer>
+                    <Wrap>
+                        <h1>Note Taker</h1>
+                        <img src={notetakerimag} alt="note taker" />
+                        <p>This 'Note Taker' was created to generate to help the user to organize his /her daily life or work.</p>
+                        <Button>
+                            <a href=" https://limitless-hamlet-20887.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/Koffidanh/note-taker" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
 
 
-                <Contact>
-                    <a className="navbar-brand" href="https://www.linkedin.com/in/boris-koffi-danhounsrou-59556955" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="Upwork" /> </a>
-                </Contact>
+                    </Wrap>
 
-                <Contact>
-                    <a className="navbar-brand" href="https://github.com/Koffidanh" target="_blank" rel="noopener noreferrer"><img src={github} alt="github" /> </a>
-                </Contact>
 
-                <Contact>
-                    <a className="navbar-brand" href="https://docs.google.com/document/d/1LqsMnv28NT_4O33mllLMQuPTg7sjhfu-JVKnQi9Ndo0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" ><img src={download} style={{width:"50px"}} alt="download" /> </a>
-                </Contact>
+                </Projects1>
+            </Fade>
 
-                <Contact>
-                <a className="navbar-brand" href="mailto: koffi.danh@gmail.com" target="_blank" rel="noopener noreferrer" >  <FontAwesomeIcon icon={faPaperPlane} size="2x"   alt="email"/> </a>
-                </Contact>
-            </ContactContainer>
+
+            <Fade right>
+                <Projects1>
+
+                    <Wrap>
+                        <h1>Password Generator</h1>
+                        <img src={passwordgeneratorimag} alt="password generator" />
+                        <p>This Password Generator was created to generate a high security password.</p>
+                        <Button>
+                            <a href="https://koffidanh.github.io/password-generator/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/Koffidanh/password-generator" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
+                    </Wrap>
+
+
+
+                    <Wrap>
+                        <h1>Burger Logger</h1>
+                        <img src={burgerloggerimag} alt="burger logger " />
+                        <p>This 'Burger Logger ' was created to log in your favorite burger that you wish to eat.</p>
+                        <Button>
+                            <a href="https://rhubarb-surprise-45818.herokuapp.com/" target="_blank" rel="noopener noreferrer" >Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/Koffidanh/burger" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
+                    </Wrap>
+
+
+                    <Wrap>
+                        <h1>JobAid</h1>
+                        <img src={jobaidimag} alt="jobaid" />
+                        <p>JOBAID was created to increase revenue for small to medium sized businesses.</p>
+                        <Button>
+                            <a href=" https://whispering-eyrie-33529.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        </Button>
+                        <Button>
+                            <a href="https://github.com/Koffidanh/job-aid" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </Button>
+
+
+                    </Wrap>
+
+
+                </Projects1>
+            </Fade>
+
+
+
+            <Fade left>
+                <SkillContainer>
+                    <Skills>
+                        <Carousel
+                            swipeable={false}
+                            draggable={false}
+                            showDots={false}
+                            responsive={responsive}
+                            infinite={true}
+                            // transitionDuration={2000}
+                            autoPlay="true"
+                            autoPlaySpeed={4000}
+
+                        >
+                            <WrapSkill>
+                                <img src={reactimag} alt="reacy" />
+                            </WrapSkill>
+
+                            <WrapSkill>
+                                <img src={htmlimag} alt="html" />
+                            </WrapSkill>
+
+                            <WrapSkill>
+                                <img src={cssimag} alt="css" />
+                            </WrapSkill>
+
+                            <WrapSkill>
+                                <img src={jsimag} alt="js" />
+                            </WrapSkill>
+
+                            <WrapSkill>
+                                <img src={nodeimag} alt="node" />
+                            </WrapSkill>
+
+                        </Carousel>
+
+
+
+                    </Skills>
+                </SkillContainer>
+            </Fade>
+
+            <Fade right>
+                <ContactTitle>
+                    <h2> Contact Me</h2>
+                </ContactTitle>
+            </Fade>
+
+
+            <Fade left>
+                <ContactContainer>
+
+
+                    <Contact>
+                        <a className="navbar-brand" href="https://www.linkedin.com/in/boris-koffi-danhounsrou-59556955" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="Upwork" /> </a>
+                    </Contact>
+
+                    <Contact>
+                        <a className="navbar-brand" href="https://github.com/Koffidanh" target="_blank" rel="noopener noreferrer"><img src={github} alt="github" /> </a>
+                    </Contact>
+
+                    <Contact>
+                        <a className="navbar-brand" href="https://docs.google.com/document/d/1LqsMnv28NT_4O33mllLMQuPTg7sjhfu-JVKnQi9Ndo0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" ><img src={download} style={{ width: "50px" }} alt="download" /> </a>
+                    </Contact>
+
+                    <Contact>
+                        <a className="navbar-brand" href="mailto: koffi@koffidanh.com" target="_blank" rel="noopener noreferrer" >  <FontAwesomeIcon icon={faPaperPlane} size="2x" alt="email" /> </a>
+                    </Contact>
+                </ContactContainer>
+
+            </Fade>
 
 
         </Container>
@@ -372,6 +390,7 @@ text-align: center;
 
 const Wrap = styled.div`
 height: auto;
+
 border-radius: 10px;
 cursor: pointer;
 border: 3px solid rgba(249, 249, 249, 0.1);
@@ -570,8 +589,7 @@ height: 50vh;
 `
 
 const Header = styled(Container)`
-min-height: 1vh;
-min-width: 100%;
+min-height: 20vh;
 background-color: #7a8599;
 display: grid;
 padding: 30px 0px 26px;
@@ -580,8 +598,8 @@ padding-right: 0:
 grid-template-columns: repeat(2, minmax(0, 1fr));
 img {
     
-    width: 75px;
-    height: 100%;
+    max-width: 50vw;
+    max-height: 20vh;
     object-fit: contain;
    
 

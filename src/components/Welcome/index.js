@@ -334,7 +334,7 @@ export default function Welcome() {
                     </Contact>
 
                     <Contact>
-                        <a className="navbar-brand" href="mailto: koffi@koffidanh.com" target="_blank" rel="noopener noreferrer" >  <FontAwesomeIcon icon={faPaperPlane} size="2x" alt="email" /> </a>
+                        <a className="navbar-brand" href="mailto: koffidanh@kurasoftware.com" target="_blank" rel="noopener noreferrer" >  <FontAwesomeIcon icon={faPaperPlane} size="2x" alt="email" /> </a>
                     </Contact>
                 </ContactContainer>
 
